@@ -1,0 +1,33 @@
+function getrandom (min, max) {
+	return Math.floor(Math.random()*(max-min+1))+min;
+}
+
+var piedra = 1;
+var papel = 2;
+var tijera = 3;
+
+var usuario=prompt("escoge 1 para piedra, 2 para papel o 3 para tijeras");
+
+var compu = getrandom(0,2);
+
+if (usuario==compu) {
+	console.log("empate!")
+};
+if (usuario==1 && compu==2) {
+	console.log("perdiste")
+};
+if (usuario==1 && compnu==3) {
+	console.log("ganaste")
+};
+if (usuario==2 && compu==1){
+	console.log("ganaste")
+}
+if (usuario==2 && compu==3) {
+	console.log("perdiste")
+};
+if (usuario==3 && compu==1) {
+	console.log("perdiste")
+};
+if (usuario==3 && compu==2) {
+	console.log("ganaste")
+};
